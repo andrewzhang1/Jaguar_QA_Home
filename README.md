@@ -1,6 +1,4 @@
-# Jaguar_QA_Home
-This directory is for QA test.
-# Updated by Andrew Zhang, 2015/08/28 
+Updated by Andrew Zhang, 2015/08/28 
 
 After we successfully download and install a jaguar build, we can run this test
 as an acceptance test, which covers most of the basic sql syntax.
