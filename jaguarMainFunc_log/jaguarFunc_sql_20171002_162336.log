@@ -1,0 +1,38 @@
+##### Main Function Test #####
+##############################
+Part 1: Now Running: Use jadmin to create user, db, etc
+#########################################################
+ 
+Now run jaguarFunc.sql:
+#####################
+andrew   14721 13950  0 16:13 pts/2    00:00:00 vim jaguar_accept_main.sql
+dev2     15426     1  0 Sep29 ?        00:05:20 /home/dev2/jaguar/bin/jaguar.bin
+jim      18078     1  0 Sep08 ?        00:12:45 /home/jim/jaguar/bin/jaguar
+wangxy   18719  3432  0 16:15 pts/7    00:00:00 /bin/bash /home/wangxy/bin/jag -u admin -p jaguar -h :7777
+wangxy   18722 18719  0 16:15 pts/7    00:00:00 /home/wangxy/jaguar/bin/rlwrap /home/wangxy/jaguar/bin/jql.bin -u admin -p jaguar -h :7777
+wangxy   18723 18722  1 16:15 pts/3    00:00:06 /home/wangxy/jaguar/bin/jql.bin -u admin -p jaguar -h :7777
+wangxy   18873     1  0 16:23 pts/5    00:00:00 /home/wangxy/jaguar/bin/jaguar.bin
+chenyang 20094     1  0 Sep15 ?        00:01:45 /home/chenyang/jaguar/bin/jaguar.bin
+andrew   22365 13896  0 16:23 pts/1    00:00:00 /bin/bash ./jaguarMainFunc.sh
+wangxy   22789 18737  0 16:23 pts/5    00:00:00 /bin/bash /home/wangxy/bin/jag -u admin -p jaguar -h :7777
+wangxy   22792 22789  0 16:23 pts/5    00:00:00 /home/wangxy/jaguar/bin/rlwrap /home/wangxy/jaguar/bin/jql.bin -u admin -p jaguar -h :7777
+wangxy   22793 22792  0 16:23 pts/8    00:00:00 /home/wangxy/jaguar/bin/jql.bin -u admin -p jaguar -h :7777
+andrew   23042 22365  0 16:23 pts/1    00:00:00 grep jaguar
+andrew   23043 22365  0 16:23 pts/1    00:00:00 tee -a jaguarMainFunc_log/jaguarFunc_sql_20171002_162336.log
+andrew   26531     1  0 12:11 ?        00:00:02 /home/andrew/jaguar/bin/jaguar.bin
+Error connect to [127.0.0.1:1117/myJaguar1] [C1014 error: database [myJaguar1] does not exist]
+Please make sure you have provided the correct username, password, database, and host:port
+
+/home/andrew/jaguar/bin/jql.bin [-h HOST:PORT] [-u USERNAME] [-p PASSWORD] [-d DATABASE] [-e COMMAND] [-f sqlFile] [-v FLAG] [-x FLAG] [-a FLAG] [-q] [-n]
+    [-h HOST:PORT]   ( IP address and port number of the server. Default: 127.0.0.1:8888 )
+    [-u USERNAME]    ( User name in Jaguar. Default: test )
+    [-p PASSWORD]    ( Password of USERNAME, prompted if not provided )
+    [-d DATABASE]    ( Database name. Default: test )
+    [-e "command"]   ( Execute some command. Default: none )
+    [-f INPUTFILE]   ( Execute command from INPUTFILE. Default: standard input)
+    [-v yes/no]      ( Echo input command. Default: no )
+    [-x yes/no]      ( Exclusive login mode for admin. Default: no )
+    [-a yes/no]      ( Require successful connection to all servers. Default: yes )
+    [-q]             ( Quiet mode. Default: no  )
+    [-n]             ( Keep newline characters in command. Default: no )
+

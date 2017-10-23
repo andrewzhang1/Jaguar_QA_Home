@@ -1,0 +1,34 @@
+##### Main Function Test #####
+##############################
+Part 1: Now Running: Use jadmin to create user, db, etc
+#########################################################
+ 
+Now run jaguarFunc.sql:
+#####################
+andrew    1911 29479  0 15:50 pts/11   00:00:00 /bin/bash ./jaguarMainFunc.sh
+andrew    2471  1911  0 15:50 pts/11   00:00:00 grep jaguar
+andrew    2472  1911  0 15:50 pts/11   00:00:00 tee -a jaguarMainFunc_log/jaguarFunc_sql_20170926_155043.log
+andrew    9108     1  0 Sep25 ?        00:04:25 /home/andrew/jaguar/bin/jaguar.bin
+jim      18078     1  0 Sep08 ?        00:08:52 /home/jim/jaguar/bin/jaguar
+dev2     18318     1  0 Sep18 ?        00:03:57 /home/dev2/jaguar/bin/jaguar.bin
+chenyang 20094     1  0 Sep15 ?        00:01:05 /home/chenyang/jaguar/bin/jaguar.bin
+andrew   28069     1  0 10:53 ?        00:00:39 java -cp ../../../../jdbc/lib/ojdbc6_11g.jar:../../../../jdbc/lib/jaguar-jdbc-2.0.jar:../../../../jdbc/lib/jdbcsql.jar -Dappconf=appconf.oracle com.jaguar.jdbcsql.Sync
+andrew   29327 29326  0 12:38 pts/9    00:00:00 /bin/bash /home/andrew/jaguar/bin/jag -u admin -p jaguar -h :1117 -d test
+andrew   29330 29327  0 12:38 pts/9    00:00:00 /home/andrew//jaguar/bin/rlwrap /home/andrew//jaguar/bin/jql.bin -u admin -p jaguar -h :1117 -d test
+andrew   29331 29330  0 12:38 pts/10   00:00:02 /home/andrew//jaguar/bin/jql.bin -u admin -p jaguar -h :1117 -d test
+Error connect to [127.0.0.1:1117/myJaguar1] [C1014 error: database [myJaguar1] does not exist]
+Please make sure you have provided the correct username, password, database, and host:port
+
+/home/andrew//jaguar/bin/jql.bin [-h HOST:PORT] [-u USERNAME] [-p PASSWORD] [-d DATABASE] [-e COMMAND] [-f sqlFile] [-v FLAG] [-x FLAG] [-a FLAG] [-q] [-n]
+    [-h HOST:PORT]   ( IP address and port number of the server. Default: 127.0.0.1:8888 )
+    [-u USERNAME]    ( User name in Jaguar. Default: test )
+    [-p PASSWORD]    ( Password of USERNAME, prompted if not provided )
+    [-d DATABASE]    ( Database name. Default: test )
+    [-e "command"]   ( Execute some command. Default: none )
+    [-f INPUTFILE]   ( Execute command from INPUTFILE. Default: standard input)
+    [-v yes/no]      ( Echo input command. Default: no )
+    [-x yes/no]      ( Exclusive login mode for admin. Default: no )
+    [-a yes/no]      ( Require successful connection to all servers. Default: yes )
+    [-q]             ( Quiet mode. Default: no  )
+    [-n]             ( Keep newline characters in command. Default: no )
+

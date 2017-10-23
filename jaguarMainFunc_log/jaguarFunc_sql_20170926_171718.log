@@ -1,0 +1,33 @@
+##### Main Function Test #####
+##############################
+Part 1: Now Running: Use jadmin to create user, db, etc
+#########################################################
+ 
+Now run jaguarFunc.sql:
+#####################
+andrew    5740  5739  0 16:23 pts/9    00:00:00 /bin/bash /home/andrew/jaguar/bin/jag -u admin -p jaguar -h :1117 -d test
+andrew    5743  5740  0 16:23 pts/9    00:00:00 /home/andrew/jaguar/bin/rlwrap /home/andrew/jaguar/bin/jql.bin -u admin -p jaguar -h :1117 -d test
+andrew    5744  5743  0 16:23 pts/1    00:00:00 /home/andrew/jaguar/bin/jql.bin -u admin -p jaguar -h :1117 -d test
+andrew    9108     1  0 Sep25 ?        00:04:46 /home/andrew/jaguar/bin/jaguar.bin
+andrew   11572 29479  0 17:17 pts/11   00:00:00 /bin/bash ./jaguarMainFunc.sh
+andrew   12225 11572  0 17:17 pts/11   00:00:00 grep jaguar
+andrew   12226 11572  0 17:17 pts/11   00:00:00 tee -a jaguarMainFunc_log/jaguarFunc_sql_20170926_171718.log
+jim      18078     1  0 Sep08 ?        00:08:55 /home/jim/jaguar/bin/jaguar
+dev2     18318     1  0 Sep18 ?        00:03:58 /home/dev2/jaguar/bin/jaguar.bin
+chenyang 20094     1  0 Sep15 ?        00:01:05 /home/chenyang/jaguar/bin/jaguar.bin
+Error connect to [127.0.0.1:1117/myJaguar1] [C1014 error: database [myJaguar1] does not exist]
+Please make sure you have provided the correct username, password, database, and host:port
+
+/home/andrew/jaguar/bin/jql.bin [-h HOST:PORT] [-u USERNAME] [-p PASSWORD] [-d DATABASE] [-e COMMAND] [-f sqlFile] [-v FLAG] [-x FLAG] [-a FLAG] [-q] [-n]
+    [-h HOST:PORT]   ( IP address and port number of the server. Default: 127.0.0.1:8888 )
+    [-u USERNAME]    ( User name in Jaguar. Default: test )
+    [-p PASSWORD]    ( Password of USERNAME, prompted if not provided )
+    [-d DATABASE]    ( Database name. Default: test )
+    [-e "command"]   ( Execute some command. Default: none )
+    [-f INPUTFILE]   ( Execute command from INPUTFILE. Default: standard input)
+    [-v yes/no]      ( Echo input command. Default: no )
+    [-x yes/no]      ( Exclusive login mode for admin. Default: no )
+    [-a yes/no]      ( Require successful connection to all servers. Default: yes )
+    [-q]             ( Quiet mode. Default: no  )
+    [-n]             ( Keep newline characters in command. Default: no )
+
