@@ -1,5 +1,7 @@
 #hs=`./gethosts.sh`
 
+# Added comments on ssd
+
 hs=$JAGUAR_HOME/conf/cluster.conf
 
 cat $hs  |
