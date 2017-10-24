@@ -22,7 +22,8 @@
 #: Test time: within 
 #: History:
 
-# 
+#: 10/23/2017 Andrew
+#  Modified on ssd
 
 # env settings
 PORT=`cat $JAGUAR_HOME/conf/server.conf |grep PORT|grep -v oport|grep -v '#'|cut -d= -f2`
