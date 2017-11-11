@@ -36,7 +36,6 @@ ls: cannot access *.diff: No such file or directory
  
 If no *.diff files found, we regard the automation are successful. 
 
-# Set env on Windows
 
 Other Notes: 
 Each test case (automation script) is independent from each other, which means that we can run each one individually, or in the a group. Some pro and con: 
@@ -47,3 +46,47 @@ Con:
 Some of the the setup is duplicated, which might take some extra time to run the automation. 
  
  
+ 
+### Note: Run tes on Windows
+#### If Installed MSYS-1.0.11.exe on windows and set system enviroment variable correctly, we should be able to run the same test on windows as well; however, we currenty encounted a permission issues
+
+For example, we can set a .bash_profile on the home directory on windows:
+
+#### 1)  Set env for jaguar and QA testing
+export JAGUAR_HOME=/c/AGZ1/jaguar-enterprise-2.8.2
+export QA_HOME=/c/AGZ1/jaguar_QA_HOME
+export PATH="$QA_HOME/bin":"$JAGUAR_HOME/bin":$PATH
+
+alias qa='cd $QA_HOME'
+alias jaguar='cd $JAGUAR_HOME'
+
+#### 2) Down load the test framework from github:
+/home/Andrew
+(Andrew@AZHANG1)\>git clone https://github.com/andrewzhang1/Jaguar_QA_Home.git
+
+#### 3) Run the test at:
+
+
+
+ /c/AGZ1/jaguar_QA_HOME/bin
+(Andrew@AZHANG1)\>ls -l
+total 87
+-rwxr-xr-x 1 Andrew Administrators   575 Nov 10 20:23 compare_result.sh
+-rw-r--r-- 1 Andrew Administrators 86368 Nov 10 20:23 diff
+-rw-r--r-- 1 Andrew Administrators   273 Nov 10 20:23 loginj
+
+/c/AGZ1/jaguar_QA_HOME/bin
+(Andrew@AZHANG1)\>which loginj
+which: loginj: unknown command
+
+/c/AGZ1/jaguar_QA_HOME/bin
+(Andrew@AZHANG1)\>which jag
+/c/AGZ1/jaguar-enterprise-2.8.2/bin/jag
+
+/c/AGZ1/jaguar_QA_HOME/bin
+(Andrew@AZHANG1)\>ls -l /c/AGZ1/jaguar-enterprise-2.8.2/bin/jag
+-rwxr-xr-x 1 Andrew Administrators 303 Oct 31 18:20 /c/AGZ1/jaguar-enterprise-2.8.2/bin/jag
+
+/c/AGZ1/jaguar_QA_HOME/bin
+(Andrew@AZHANG1)\>
+
