@@ -27,9 +27,9 @@ Also update the PATH accordingly. For example (on andrew@ssd):
 ##### Tips for a successful env settings:
 Before start run our automated test, please make sure all the following four command can be found as a verificaiton:
 
- /home/andrew
-(andrew@ssd)\>echo $JAGUAR_HOME
-/home/andrew/jaguar
+-  /home/andrew
+- (andrew@ssd)\>echo $JAGUAR_HOME
+- /home/andrew/jaguar
 
 /home/andrew
 (andrew@ssd)\>echo $QA_HOME
