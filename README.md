@@ -16,8 +16,8 @@ We can download the test anywhere on the server, for example:
 
 #### 3) Set Two System Variable 
 System environment settings requires: 
-- JAGUAR_HOME 
-- QA_HOME 
+: JAGUAR_HOME 
+: QA_HOME 
 
 Also update the PATH accordingly. For example (on andrew@ssd): 
 : export JAGUAR_HOME=/home/$LOGNAME/jaguar
