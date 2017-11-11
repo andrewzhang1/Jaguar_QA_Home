@@ -174,6 +174,8 @@ total 87
 which: loginj: unknown command
 ```
 
-#### In progress..
-- Create more test cases 
+### In progress..
+- Creating more test cases 
 - Trying to fix binary diff files or find a workaround
+- Add status at the end of test, such as: total *suc files and *diff files
+
