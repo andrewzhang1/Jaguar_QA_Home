@@ -33,22 +33,45 @@ export ADMIN_PASSWORD=jaguar
 FILE=jaguar_test_main
 logf="$JAGUAR_TEST_HOME/work/${FILE}.log"
 
-# Clean old log:
+# Clean old log and work direcry::
+rm  $QA_HOME/work/*.*
+
 if [ -f $logf ]
     then rm $logf
 fi
 
-echo "Runing select1.sh" 2>&1 | tee -a $logf
-echo "==================="  2>&1 | tee -a $logf
+echo "Runing data_load.sh " 2>&1 | tee -a $logf
+echo "========================="  2>&1 | tee -a $logf
 echo "" 2>&1 | tee -a $logf
+data_load.sh  2>&1 | tee -a $logf
 
-select1.sh 2>&1 | tee -a $logf
+echo "Runing create_db1_egift.sh now "     2>&1 | tee -a $logf
+echo "=================================="  2>&1 | tee -a $logf
+create_db1_egift.sh 2>&1 | tee -a $logf
 
 
 echo ""  2>&1 | tee -a $logf
-echo "Runing select2.sh now " 2>&1 | tee -a $logf
-echo "=================++++=="  2>&1 | tee -a $logf
+echo "Runing import_export_csv.sh now " 2>&1 | tee -a $logf
+echo "============================"  2>&1 | tee -a $logf
+import_export_csv.sh  2>&1 | tee -a $logf
 
-select2.sh 2>&1 | tee -a $logf
+echo ""  2>&1 | tee -a $logf
+echo "Runing import_export_sql.sh  now " 2>&1 | tee -a $logf
+echo "============================"  2>&1 | tee -a $logf
+import_export_sql.sh 2>&1 | tee -a $logf
+
+#echo ""  2>&1 | tee -a $logf
+echo -e "\nNew Feature in 2.8.2.3 " 2>&1 | tee -a $logf
+echo "Runing column_default.sh  now " 2>&1 | tee -a $logf
+echo "============================"  2>&1 | tee -a $logf
+column_default.sh 2>&1 | tee -a $logf
+
+#  time_stamp.sh  2>&1 | tee -a $logf
+
+
+
+
+
+
 
 
