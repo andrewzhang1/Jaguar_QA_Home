@@ -11,11 +11,15 @@ Make sure to have a successful installation either on a single server or cluster
 #### 2) Download the test framework
 We can download the test anywhere on the server, for example:
 
+/home/andrew/t/azhang
+(andrew@ssd)\>git clone https://github.com/andrewzhang1/Jaguar_QA_Home.git
+
+#### 3) Set Two System Variable 
 System environment settings requires: 
 JAGUAR_HOME 
 QA_HOME 
 
-And some PATH settings, for example (on andrew@ssd): 
+Also update the PATH accordingly. For example (on andrew@ssd): 
 export JAGUAR_HOME=/home/$LOGNAME/jaguar 
 export QA_HOME=/home/andrew/t/azhang/qa 
 export PATH=$QA_HOME/bin:$QA_HOME/sh:$JAGUAR_HOME/bin:$PATH 
@@ -39,8 +43,8 @@ Before start run our automated test, please make sure all the following four com
 (andrew@ssd)\>which loginj
 ~/t/azhang/Jaguar_QA_HOME/bin/loginj
 
-#### 3) 
-3) We should be able run test cases from anywhere on the server where we have test cases downloaded; however, it's easier to kick out the test from 
+#### 4) 
+We should be able run test cases from anywhere on the server where we have test cases downloaded; however, it's easier to kick out the test from 
 $QA_HOME/sh 
 Step 1: run import_export_sql.sh 
 /home/andrew/t/azhang/qa/sh 
@@ -59,7 +63,7 @@ ls: cannot access *.diff: No such file or directory
 If no *.diff files found, we regard the automation are successful. 
 
 
-Other Notes: 
+#### Other Notes: 
 Each test case (automation script) is independent from each other, which means that we can run each one individually, or in the a group. Some pro and con: 
 Pro: 
 Able to run individually and not interfere each other 
