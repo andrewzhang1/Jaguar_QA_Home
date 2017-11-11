@@ -93,23 +93,7 @@ drwxrwxrwx 2 andrew andrew 4096 Nov 10 20:16 sql
 drwxrwxr-x 2 andrew andrew 4096 Nov 10 21:31 work
 drwxrwxrwx 2 andrew andrew 4096 Nov 10 20:08 work_11_10
 drwxrwxrwx 2 andrew andrew 4096 Oct 23 14:48 work_2.8.1
-drwxrwxrwx 2 andrew andrew 4096 Oct 23 14:48 work_import_export_csv_v2.8.1.1_10_17
-/home/andrew/t/azhang/Jaguar_QA_HOME
-(andrew@ssd)\>ls -l
-total 48
-drwxrwxrwx 2 andrew andrew 4096 Nov 10 20:08 bas
-drwxrwxrwx 2 andrew andrew   54 Nov 10 20:19 bin
-drwxrwxrwx 2 andrew andrew   58 Nov 10 19:25 data
-drwxrwxrwx 2 andrew andrew 4096 Oct 23 14:48 jaguarMainFunc_log
-drwxrwxrwx 2 andrew andrew   24 Oct 23 14:48 jaguarTestData
-drwxrwxrwx 2 andrew andrew    6 Oct 23 14:48 log
--rwxrwxr-x 1 andrew andrew 4189 Nov 10 21:36 README.md
-drwxrwxrwx 2 andrew andrew 4096 Nov 10 21:31 sh
-drwxrwxrwx 2 andrew andrew 4096 Nov 10 20:16 sql
-drwxrwxr-x 2 andrew andrew 4096 Nov 10 21:31 work
-drwxrwxrwx 2 andrew andrew 4096 Nov 10 20:08 work_11_10
-drwxrwxrwx 2 andrew andrew 4096 Oct 23 14:48 work_2.8.1
-drwxrwxrwx 2 andrew andrew 4096 Oct 23 14:48 work_2.7.
+drwxrwxrwx 2 andrew andrew 4096 Oct 23 14:48 work_2.7.9
 
 ```
 
