@@ -3,7 +3,7 @@
 # Main test to control the batch sql
 # Script Name: jaguarMainFunc.sh
 # Created by: Andrew Zhang
-# Date: June 27, 2015
+# Date: NovJune 27, 2015
 #
 
 # Note:

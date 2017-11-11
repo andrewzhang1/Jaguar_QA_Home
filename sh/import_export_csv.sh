@@ -90,7 +90,7 @@ sshall grep selectcount $JAGUAR_HOME/log/jaguar.log 2>&1 | tee -a $QA_HOME/work/
 
 # 2-5. Compare results
 echo -e "\n\n2-5. Compare results "  2>&1 | tee -a $logf
-echo -e "======++++======================== "  2>&1 | tee -a $l
+echo -e "================================== "  2>&1 | tee -a  $logf 
 
 # compare import_export.sql.out
 export FILE=import_export_csv

@@ -3,7 +3,7 @@
 # command line: loginj < column_default.sql
 
 
-spool $QA_HOME/work/column_default.sql.out;
+spool $QA_HOME/work/column_default.out;
 
 drop table if exists column_default; 
 

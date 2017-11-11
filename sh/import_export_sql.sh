@@ -44,7 +44,7 @@ jaguarstart_on_all_hosts.sh 2>&1 | tee -a $logf
 
 # 1.Create table and load data
 echo -e "\n1. Create table and load data"  2>&1 | tee -a $logf
-echo -e "============================== \n"  2>&1 | tee -a $l
+echo -e "============================== \n"  2>&1 | tee -a  $logf
 loginj < $QA_HOME/sql/import_export_sql.sql  2>&1 | tee -a $logf 
 
 sleep 15 
@@ -54,7 +54,7 @@ sleep 15
 
 # 2-1 export by jagexportsql
 echo -e "\n\n2-1. export by jagexportsql...\n"  2>&1 | tee -a $logf
-echo -e "============================== \n"  2>&1 | tee -a $l
+echo -e "============================== \n"  2>&1 | tee -a $logf 
 
 jagexportsql -d test -t test.import_export -f $QA_HOME/work/test.import_export.sql 2>&1 | tee -a $logf
 echo "Runng jagexportsql...then sleep 15 sec."
@@ -83,22 +83,21 @@ echo -e "============================== \n"  2>&1 | tee -a $logf
 
 # check the row count before we check the select count from each server
 
-loginj < $QA_HOME/sql/import_export-verification.sql 2>&1 | tee -a $logf
+loginj < $QA_HOME/sql/import_export-verification.sql 2>&1 | tee -a $logf 2>&1 | tee -a $logf
 
-sshall grep selectcount $JAGUAR_HOME/log/jaguar.log 2>&1 | tee -a $QA_HOME/work/importsql_selectcount.out
+sshall grep selectcount $JAGUAR_HOME/log/jaguar.log 2>&1 | tee -a $QA_HOME/work/importsql_selectcount.out 2>&1 | tee -a $logf
 
 
 # 2-5. Compare results
 echo -e "\n\n2-5. Compare results "  2>&1 | tee -a $logf
-echo -e "======++++======================== "  2>&1 | tee -a $l
-
+echo -e "================================ "  2>&1 | tee -a $logf
 # compare import_export.sql.out
 export FILE=import_export_sql
-compare_result.sh $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas
+compare_result.sh $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas  2>&1 | tee -a $logf 
 
 # Compapare  import_export-verification.out
 export FILE=import_export-verification_sql
-compare_result.sh $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas
+compare_result.sh $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas  2>&1 | tee -a $logf
 
 
 echo "End of test import_export_sql.sh" 2>&1 | tee -a $logf

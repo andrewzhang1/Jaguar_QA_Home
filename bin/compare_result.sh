@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Script Name: compare_result.sh
 
 if [ $# != 2 ]
 then 
