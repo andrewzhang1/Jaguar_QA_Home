@@ -5,15 +5,6 @@ Updated by Andrew Zhang, 11/10/2017 (Draft)
 Able to run anywhere on the one of the server that has jaguar server installed. 
 Automated test cases will check the results (successful or failure) at the end of the test under the work directory 
 
-Structure and Descriptions: 
-```
-$QA_HOME/sh: where automation scripts are located. 
-$QA_HOME/bin: some predefined executable tests, such as "loginj". 
-$QA_HOME/bas: baseline for the comparison. 
-$QA_HOME/work: the work directory; all the test results are here (we can rename and archive the result into such as: 
-$QA_HOME/work_import_export_sql_v2.8.1.1_10_17 
-```
-
 Jaguar database automation enables automated test cases with minimum manual operation. 
 
 Here are a few requirement and dependencies  
@@ -25,6 +16,14 @@ We can download the test anywhere on the server, for example:
 ```
 /home/andrew/t/azhang
 (andrew@ssd)\>git clone https://github.com/andrewzhang1/Jaguar_QA_Home.git
+```
+Structure and Descriptions: 
+```
+$QA_HOME/sh: where automation scripts are located. 
+$QA_HOME/bin: some predefined executable tests, such as "loginj". 
+$QA_HOME/bas: baseline for the comparison. 
+$QA_HOME/work: the work directory; all the test results are here (we can rename and archive the result into such as: 
+$QA_HOME/work_import_export_sql_v2.8.1.1_10_17 
 ```
 
 #### 3) Set Two System Variables 
