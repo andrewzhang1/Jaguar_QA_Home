@@ -75,23 +75,23 @@ If no *.diff files found, we regard the automation are successful.
 
 
 #### Other Notes: 
-Each test case (automation script) is independent from each other, which means that we can run each one individually, or in the a group. Some pro and con: 
-Pro: 
+Each test case (automation script) is independent from each other, which means that we can run each one individually, or in the a group. ##### Some pro and con: 
+###### Pro: 
 Able to run individually and not interfere each other 
 We can pick any one for a particular purpose  
-Con: 
+###### Con: 
 Some of the the setup is duplicated, which might take some extra time to run the automation. 
  
  
  
- 
   
-### Note: Run tes on Windows
-#### If Installed MSYS-1.0.11.exe on windows and set system enviroment variable correctly, we should be able to run the same test on windows as well; however, we currenty encounted a permission issues
+### Note: Run testing on Windows
+#### If we install MSYS-1.0.11.exe on windows and set system enviroment variable correctly, we should be able to run the same test on windows as well; however, we currenty encounted a permission issues!
 
 For example, we can set a .bash_profile on the home directory for the convenience on windows:
 
 #### 1)  Set env for jaguar and QA testing
+```
 /home/Andrew
 (Andrew@AZHANG1)\>vi .bash_profile
 
@@ -105,23 +105,29 @@ export PATH="$QA_HOME/bin":"$JAGUAR_HOME/bin":$PATH
 
 alias qa='cd $QA_HOME'
 alias jaguar='cd $JAGUAR_HOME'
+```
 
 #### 2) Run this command to set the environment:
-
+```
 /home/Andrew
 (Andrew@AZHANG1)\>. .bash_profile
+```
 
 #### 3) Down load the test framework from github:
+```
 /home/Andrew
 (Andrew@AZHANG1)\>git clone https://github.com/andrewzhang1/Jaguar_QA_Home.git
+```
 
 #### 4) Run the test at:
 
+```
 /c/AGZ1/jaguar_QA_HOME/sh
 (Andrew@AZHANG1)\>
+```
 
 #### Note: Currently, we ran into a permission issue on windows:
-
+```
  /c/AGZ1/jaguar_QA_HOME/bin
 (Andrew@AZHANG1)\>ls -l
 total 87
@@ -132,4 +138,4 @@ total 87
 /c/AGZ1/jaguar_QA_HOME/bin
 (Andrew@AZHANG1)\>which loginj
 which: loginj: unknown command
-
+```
