@@ -1,4 +1,5 @@
-# Updated by Andrew Zhang, 
+## Instruction on Running automated test for jaguar database
+Updated by Andrew Zhang, 
 ## 11/10/2017 
 ### (Draft)
 
