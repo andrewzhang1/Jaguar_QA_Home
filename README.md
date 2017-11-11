@@ -31,9 +31,10 @@ export PATH=$QA_HOME/bin:$QA_HOME/sh:$JAGUAR_HOME/bin:$PATH
 ##### Tips for a successful env settings:
 Before start run our automated test, please make sure all the following four command can be found as a verificaiton:
 
--  /home/andrew
-- (andrew@ssd)\>echo $JAGUAR_HOME
-- /home/andrew/jaguar
+```
+/home/andrew
+(andrew@ssd)\>echo $JAGUAR_HOME
+/home/andrew/jaguar
 
 /home/andrew
 (andrew@ssd)\>echo $QA_HOME
@@ -46,6 +47,7 @@ Before start run our automated test, please make sure all the following four com
 /home/andrew
 (andrew@ssd)\>which loginj
 ~/t/azhang/Jaguar_QA_HOME/bin/loginj
+```
 
 #### 4) 
 We should be able run test cases from anywhere on the server where we have test cases downloaded; however, it's easier to kick out the test from 
