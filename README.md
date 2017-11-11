@@ -1,5 +1,6 @@
-Updated by Andrew Zhang, 2015/08/28 
-(Draft)
+# Updated by Andrew Zhang, 
+## 11/10/2017 
+### (Draft)
 
 Jaguar database automation enables automated test cases with minimum manual operation. 
 After we successfully download and install a jaguar build, we can run this test
@@ -34,6 +35,7 @@ ls: cannot access *.diff: No such file or directory
  
 If no *.diff files found, we regard the automation are successful. 
 
+# Set env on Windows
 
 Other Notes: 
 Each test case (automation script) is independent from each other, which means that we can run each one individually, or in the a group. Some pro and con: 
