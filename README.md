@@ -11,8 +11,10 @@ Make sure to have a successful installation either on a single server or cluster
 #### 2) Download the test framework
 We can download the test anywhere on the server, for example:
 
+```
 /home/andrew/t/azhang
 (andrew@ssd)\>git clone https://github.com/andrewzhang1/Jaguar_QA_Home.git
+```
 
 #### 3) Set Two System Variable 
 System environment settings requires: 
@@ -49,8 +51,10 @@ Before start run our automated test, please make sure all the following four com
 ~/t/azhang/Jaguar_QA_HOME/bin/loginj
 ```
 
-#### 4) 
-We should be able run test cases from anywhere on the server where we have test cases downloaded; however, it's easier to kick out the test from 
+#### 4) Run the test from the $QA_HOME/sh
+We should be able run test cases from anywhere on the server where we have test cases downloaded; however, it's easier to kick out the test from:
+
+```
 $QA_HOME/sh 
 Step 1: run import_export_sql.sh 
 /home/andrew/t/azhang/qa/sh 
@@ -65,7 +69,8 @@ Step 2: Check result:
 (andrew@ssd)\>ls *.diff | wc 
 ls: cannot access *.diff: No such file or directory 
       0       0       0 
- 
+```
+
 If no *.diff files found, we regard the automation are successful. 
 
 
