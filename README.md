@@ -73,6 +73,11 @@ ls: cannot access *.diff: No such file or directory
 
 If no *.diff files found, we regard the automation are successful. 
 
+#### 5) Tips to save work dirtories
+
+It's up to testers to keep the work directory. For example, we can save a work directory by attaching a version number to archiev the test results for each release:
+
+
 
 #### Other Notes: 
 Each test case (automation script) is independent from each other, which means that we can run each one individually, or in the a group. ##### Some pro and con: 
