@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Script Name: compare_result.sh
+# Description: A utilty script
 
 if [ $# != 2 ]
 then 
