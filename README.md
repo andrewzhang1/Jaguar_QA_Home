@@ -6,16 +6,40 @@ After we successfully download and install a jaguar build, we can run this test
 as an acceptance test, which covers most of the basic sql syntax.
 
 Here are a few requirement and dependencies  
-1) Need a successful installation either on a single server or cluster; make sure sure all server started/stopped without errors 
-2) System environment settings requires: 
+#### 1) Succesful Installation
+Make sure to have a successful installation either on a single server or cluster, and all server started/stopped without errors 
+#### 2) Download the test framework
+We can download the test anywhere on the server, for example:
+
+System environment settings requires: 
 JAGUAR_HOME 
 QA_HOME 
+
 And some PATH settings, for example (on andrew@ssd): 
- 
 export JAGUAR_HOME=/home/$LOGNAME/jaguar 
 export QA_HOME=/home/andrew/t/azhang/qa 
 export PATH=$QA_HOME/bin:$QA_HOME/sh:$JAGUAR_HOME/bin:$PATH 
- 
+
+##### Tips for a successful env settings:
+Before start run our automated test, please make sure all the following four command can be found as a verificaiton:
+
+ /home/andrew
+(andrew@ssd)\>echo $JAGUAR_HOME
+/home/andrew/jaguar
+
+/home/andrew
+(andrew@ssd)\>echo $QA_HOME
+/home/andrew/t/azhang/Jaguar_QA_HOME
+
+/home/andrew
+(andrew@ssd)\>which jag
+~/jaguar/bin/jag
+
+/home/andrew
+(andrew@ssd)\>which loginj
+~/t/azhang/Jaguar_QA_HOME/bin/loginj
+
+#### 3) 
 3) We should be able run test cases from anywhere on the server where we have test cases downloaded; however, it's easier to kick out the test from 
 $QA_HOME/sh 
 Step 1: run import_export_sql.sh 
