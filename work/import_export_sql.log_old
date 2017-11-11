@@ -1,0 +1,229 @@
+ssh 192.168.7.108 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.105 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.109 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.106 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.111 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.112 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.113 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.114 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.116 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.117 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.136 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.141 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.151 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.108 /home/andrew/jaguar/bin/jaguarstatus
+
+Shutdown of jaguar server on current host ssd ...
+
+Shutdown of jaguar server on current host dell1 ...
+
+Shutdown of jaguar server on current host dell3 ...
+
+Shutdown of jaguar server on current host hd8 ...
+
+Shutdown of jaguar server on current host hp1 ...
+
+
+Shutdown of jaguar server on current host hd5 ...
+
+Shutdown of jaguar server on current host hd2 ...
+Shutdown of jaguar server on current host hd6 ...
+
+
+Shutdown of jaguar server on current host hd7 ...
+Shutdown of jaguar server on current host hp2 ...
+
+Shutdown of jaguar server on current host dell2 ...
+
+Shutdown of jaguar server on current host HD4 ...
+
+Shutdown of jaguar server on current host HD3 ...
+jaguar server is running on HD1
+ssh 192.168.7.105 /home/andrew/jaguar/bin/jaguarstatus
+
+Shutdown of jaguar server on current host HD1 ...
+jaguar server is NOT running on hd2
+ssh 192.168.7.109 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on HD3
+ssh 192.168.7.106 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on HD4
+ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on ssd
+ssh 192.168.7.111 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hd5
+ssh 192.168.7.112 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hd6
+ssh 192.168.7.113 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hd7
+ssh 192.168.7.114 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hd8
+ssh 192.168.7.116 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hp1
+ssh 192.168.7.117 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hp2
+ssh 192.168.7.136 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on dell1
+ssh 192.168.7.141 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on dell2
+ssh 192.168.7.151 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on dell3
+jaguarstatus_on_all_hosts.sh  total hosts=14  jaguar on=1  jaguar off=13
+Jaguar off hosts:  192.168.7.105 192.168.7.109 192.168.7.106 192.168.7.120 192.168.7.111 192.168.7.112 192.168.7.113 192.168.7.114 192.168.7.116 192.168.7.117 192.168.7.136 192.168.7.141 192.168.7.151
+Fri Oct 20 15:06:55 PDT 2017
+There are still 1 jaguar servers running, wait ...
+Fri Oct 20 15:06:58 PDT 2017
+
+Fri Oct 20 14:58:58 PDT 2017
+
+Fri Oct 20 14:59:22 PDT 2017
+
+Fri Oct 20 18:02:16 EDT 2017
+
+Fri Oct 20 15:00:59 PDT 2017
+
+Fri Oct 20 18:02:16 EDT 2017
+
+Fri Oct 20 15:05:02 PDT 2017
+
+Fri Oct 20 18:02:16 EDT 2017
+
+Fri Oct 20 18:02:16 EDT 2017
+
+Fri Oct 20 15:02:39 PDT 2017
+
+Fri Oct 20 15:02:17 PDT 2017
+
+Fri Oct 20 15:01:33 PDT 2017
+
+Fri Oct 20 15:03:26 PDT 2017
+
+Fri Oct 20 15:02:27 PDT 2017
+
+ssh 192.168.7.108 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on HD1
+ssh 192.168.7.105 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hd2
+ssh 192.168.7.109 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on HD3
+ssh 192.168.7.106 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on HD4
+ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on ssd
+ssh 192.168.7.111 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hd5
+ssh 192.168.7.112 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hd6
+ssh 192.168.7.113 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hd7
+ssh 192.168.7.114 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hd8
+ssh 192.168.7.116 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hp1
+ssh 192.168.7.117 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on hp2
+ssh 192.168.7.136 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on dell1
+ssh 192.168.7.141 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on dell2
+ssh 192.168.7.151 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is NOT running on dell3
+jaguarstatus_on_all_hosts.sh  total hosts=14  jaguar on=0  jaguar off=14
+Jaguar off hosts:  192.168.7.108 192.168.7.105 192.168.7.109 192.168.7.106 192.168.7.120 192.168.7.111 192.168.7.112 192.168.7.113 192.168.7.114 192.168.7.116 192.168.7.117 192.168.7.136 192.168.7.141 192.168.7.151
+Jaguar database has been stopped on all 14 hosts
+ssh 192.168.7.108 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.105 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.109 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.106 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.111 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.112 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.113 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.114 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.116 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.117 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.136 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.141 /home/andrew/jaguar/bin/jaguarstart
+ssh 192.168.7.151 /home/andrew/jaguar/bin/jaguarstart
+Jaguar database server is being started on all hosts ...
+jaguar server is running on ssd
+jaguar server is running on dell1
+jaguar server is running on dell3
+jaguar server is running on hp2
+jaguar server is running on hd5
+jaguar server is running on hd7
+jaguar server is running on hd8
+jaguar server is running on hd6
+jaguar server is running on hd2
+jaguar server is running on hp1
+jaguar server is running on HD4
+jaguar server is running on dell2
+jaguar server is running on HD3
+jaguar server is running on HD1
+
+1. Create table and load data
+Jaguar Server 2.8.1 140582645090048 / Client 2.8.1
+
+jaguar:test> jaguar:test> Table import_export is dropped successfully
+Done in 3050 milliseconds 
+jaguar:test> Done in 47 microseconds 
+jaguar:test> jaguar:test> Done in 45 milliseconds 
+jaguar:test> jaguar:test> Done in 758 milliseconds 
+jaguar:test> jaguar:test> Done in 96 microseconds 
+jaguar:test> 
+
+2-1. export by jagexportsql...
+
+Fri Oct 20 15:07:30 PDT 2017
+
+Jaguar Server 2.8.1 140582533986048 / Client 2.8.1
+
+jaguar:test> spool /home/andrew/t/azhang/qa/work/test.import_export.sql;
+Done in 164 microseconds 
+jaguar:test> select * from test.import_export timeout 1000000 exportsql;
+Done in 287 milliseconds (10006 rows) 
+jaguar:test> spool off;
+Done in 180 microseconds 
+jaguar:test> quit;
+Done
+Exported data is saved in file /home/andrew/t/azhang/qa/work/test.import_export.sql
+The exported file can be imported back to database with the command:
+
+    ./jagimportsql /home/andrew/t/azhang/qa/work/test.import_export.sql
+
+Fri Oct 20 15:07:32 PDT 2017
+
+2-2. Clean data...
+============================== 
+
+Jaguar Server 2.8.1 140582489859840 / Client 2.8.1
+
+jaguar:test> jaguar:test> Done in 42 microseconds 
+jaguar:test> Done in 3052 milliseconds 
+jaguar:test> jaguar:test> Done in 96 microseconds 
+jaguar:test> 
+
+2-3. Import by jagimportsql...
+============================== 
+
+Fri Oct 20 15:07:51 PDT 2017
+/home/andrew/t/azhang/qa/work/test.import_export.sql has 1420797 bytes 
+Jaguar Server 2.8.1 140582280128256 / Client 2.8.1
+
+Done
+Fri Oct 20 15:07:53 PDT 2017
+
+2-4. Check Correctness...
+============================== 
+
+Jaguar Server 2.8.1 140582091409152 / Client 2.8.1
+
+jaguar:test> jaguar:test> Done in 48 microseconds 
+jaguar:test> jaguar:test> Done in 1052 microseconds 
+jaguar:test> Done in 3 milliseconds (1 row) 
+jaguar:test> Done in 3 milliseconds (1 row) 
+jaguar:test> jaguar:test> Done in 57 microseconds 
+jaguar:test> 
+
+2-5. Compare results 
+End of test import_export_sql.sh

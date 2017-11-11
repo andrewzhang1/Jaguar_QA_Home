@@ -1,0 +1,41 @@
+table test.import_export
+(
+  key:
+    uid char(32),
+  value:
+    v1 char(16),
+    v2 char(16),
+    v3 char(16),
+    v_new1 char(10),
+    spare_ char(14)
+);
+
+Table column test is renamed/added successfully
+table test.import_export
+(
+  key:
+    uid char(32),
+  value:
+    v1 char(16),
+    v2 char(16),
+    v3 char(16),
+    v_new1 char(10),
+    v_new3 char(10),
+    spare_ char(4)
+);
+
+test.import_export contains 10006 rows
+test.import_export contains 10006 rows
+table test.import_export
+(
+  key:
+    uid char(32),
+  value:
+    v1 char(16),
+    v2 char(16),
+    v3 char(16),
+    v_new1 char(10),
+    v_new3 char(10),
+    spare_ char(4)
+);
+

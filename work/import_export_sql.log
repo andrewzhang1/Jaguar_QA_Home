@@ -1,0 +1,85 @@
+ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstop
+ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstatus
+jaguar server is running on ssd
+jaguarstatus_on_all_hosts.sh  total hosts=1  jaguar on=1  jaguar off=0
+Mon Nov  6 10:17:10 PST 2017
+There are still 1 jaguar servers running, wait ...
+
+Shutdown of jaguar server on current host ssd ...
+ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstatus
+Mon Nov  6 10:17:15 PST 2017
+
+jaguar server is NOT running on ssd
+jaguarstatus_on_all_hosts.sh  total hosts=1  jaguar on=0  jaguar off=1
+Jaguar off hosts:  192.168.7.120
+Jaguar database has been stopped on all 1 hosts
+ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstart
+Jaguar database server is being started on all hosts ...
+jaguar server is running on ssd
+
+1. Create table and load data
+Jaguar Server 2.8.2 140291109435136 / Client 2.8.2
+
+jaguar:test> jaguar:test> Table import_export is dropped successfully
+Done in 2 milliseconds 
+jaguar:test> Done in 59 microseconds 
+jaguar:test> jaguar:test> Done in 2 milliseconds 
+jaguar:test> jaguar:test> Done in 489 milliseconds 
+jaguar:test> jaguar:test> Done in 113 microseconds 
+jaguar:test> 
+
+2-1. export by jagexportsql...
+
+Mon Nov  6 10:17:39 PST 2017
+
+Jaguar Server 2.8.2 140290610427648 / Client 2.8.2
+
+jaguar:test> spool /home/andrew/t/azhang/Jaguar_QA_HOME/work/test.import_export.sql;
+Done in 28 microseconds 
+jaguar:test> select * from test.import_export timeout 1000000 exportsql;
+Done in 47 milliseconds (10006 rows) 
+jaguar:test> spool off;
+Done in 205 microseconds 
+jaguar:test> quit;
+Done
+Exported data is saved in file /home/andrew/t/azhang/Jaguar_QA_HOME/work/test.import_export.sql
+The exported file can be imported back to database with the command:
+
+    ./jagimportsql /home/andrew/t/azhang/Jaguar_QA_HOME/work/test.import_export.sql
+
+Mon Nov  6 10:17:41 PST 2017
+
+2-2. Clean data...
+============================== 
+
+Jaguar Server 2.8.2 140290608326400 / Client 2.8.2
+
+jaguar:test> jaguar:test> Done in 34 microseconds 
+jaguar:test> Done in 2006 milliseconds 
+jaguar:test> jaguar:test> Done in 106 microseconds 
+jaguar:test> 
+
+2-3. Import by jagimportsql...
+============================== 
+
+Mon Nov  6 10:17:59 PST 2017
+/home/andrew/t/azhang/Jaguar_QA_HOME/work/test.import_export.sql has 1420797 bytes 
+Jaguar Server 2.8.2 140291107333888 / Client 2.8.2
+
+Done
+Mon Nov  6 10:18:01 PST 2017
+
+2-4. Check Correctness...
+============================== 
+
+Jaguar Server 2.8.2 140290589415168 / Client 2.8.2
+
+jaguar:test> jaguar:test> Done in 32 microseconds 
+jaguar:test> jaguar:test> Done in 130 microseconds 
+jaguar:test> Done in 22 milliseconds (1 row) 
+jaguar:test> Done in 21 milliseconds (1 row) 
+jaguar:test> jaguar:test> Done in 52 microseconds 
+jaguar:test> 
+
+2-5. Compare results 
+End of test import_export_sql.sh
