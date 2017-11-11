@@ -1,6 +1,6 @@
 ## Instruction on Running automated test for jaguar database
 Updated by Andrew Zhang, 
-## 11/10/2017 
+#### 11/10/2017 
 ### (Draft)
 
 Jaguar database automation enables automated test cases with minimum manual operation. 
