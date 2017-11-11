@@ -27,7 +27,7 @@ We can download the test anywhere on the server, for example:
 (andrew@ssd)\>git clone https://github.com/andrewzhang1/Jaguar_QA_Home.git
 ```
 
-#### 3) Set Two System Variable 
+#### 3) Set Two System Variables 
 System environment settings requires: 
 ```
 JAGUAR_HOME 
@@ -42,7 +42,7 @@ export PATH=$QA_HOME/bin:$QA_HOME/sh:$JAGUAR_HOME/bin:$PATH
 ```
 
 ##### Tips for a successful env settings:
-Before start run our automated test, please make sure all the following four command can be found as a verificaiton:
+Before we start to run the automated test, please make sure all the following four command can be found as a verificaiton:
 
 ```
 /home/andrew
@@ -103,7 +103,7 @@ drwxrwxrwx 2 andrew andrew 4096 Nov 10 21:31 sh
 drwxrwxrwx 2 andrew andrew 4096 Nov 10 20:16 sql
 drwxrwxr-x 2 andrew andrew 4096 Nov 10 21:31 work
 drwxrwxrwx 2 andrew andrew 4096 Nov 10 20:08 work_11_10
-drwxrwxrwx 2 andrew andrew 4096 Oct 23 14:48 work_2.8.1
+drwxrwxrwx 2 andrew andrew 4096 Oct 23 14:48 work_2.8.2.3
 drwxrwxrwx 2 andrew andrew 4096 Oct 23 14:48 work_2.7.9
 
 ```
