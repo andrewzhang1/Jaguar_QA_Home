@@ -173,3 +173,7 @@ total 87
 (Andrew@AZHANG1)\>which loginj
 which: loginj: unknown command
 ```
+
+#### In progress..
+- Create more test cases 
+- Trying to fix binary diff files or find a workaround
