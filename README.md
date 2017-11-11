@@ -20,9 +20,9 @@ System environment settings requires:
 - QA_HOME 
 
 Also update the PATH accordingly. For example (on andrew@ssd): 
-- export JAGUAR_HOME=/home/$LOGNAME/jaguar
-- export QA_HOME=/home/andrew/t/azhang/qa
-- export PATH=$QA_HOME/bin:$QA_HOME/sh:$JAGUAR_HOME/bin:$PATH
+: export JAGUAR_HOME=/home/$LOGNAME/jaguar
+: export QA_HOME=/home/andrew/t/azhang/qa
+: export PATH=$QA_HOME/bin:$QA_HOME/sh:$JAGUAR_HOME/bin:$PATH
 
 ##### Tips for a successful env settings:
 Before start run our automated test, please make sure all the following four command can be found as a verificaiton:
