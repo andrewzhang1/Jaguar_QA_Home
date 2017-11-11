@@ -1,9 +1,10 @@
-Database is NOT changed
+Database starbucks is created successfully
+Database is changed successfully
 Table egift_item is created successfully
 table starbucks.egift_item
 (
   key:
-    prod_id integer,
+    prod_id int,
     code_no char(100),
     status tinyint,
     log_time datetime,
@@ -18,7 +19,7 @@ table starbucks.egift_item
     card_cover char(100),
     log_time_ms bigint,
     log_time_ymd char(8),
-    log_time_y integer,
+    log_time_y int,
     log_time_q tinyint,
     log_time_m tinyint,
     log_time_d tinyint,
@@ -50,8 +51,8 @@ table starbucks.egift_item
     ext_double2 double(18,2),
     ext_bigint1 bigint,
     ext_bigint2 bigint,
-    ext_int1 integer,
-    ext_int2 integer,
+    ext_int1 int,
+    ext_int2 int,
     ext_time1 datetime,
     ext_time2 datetime,
     spare_ char(1141)

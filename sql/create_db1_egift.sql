@@ -1,8 +1,8 @@
-spool  $QA_HOME/work/create_db1_egift.out;
-
-use starbucks;
 drop table if exist starbucks.egift_item;
 
+spool  $QA_HOME/work/create_db1_egift.out;
+createdb starbucks;
+use starbucks;
 create table starbucks.egift_item
 (
   key:
@@ -60,8 +60,8 @@ create table starbucks.egift_item
 );
 
 desc starbucks.egift_item;
-
 drop table  starbucks.egift_item;
+
 use test;
 
 dropdb starbucks;

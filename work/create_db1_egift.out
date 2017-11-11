@@ -1,5 +1,5 @@
-Database is NOT changed
-Table egift_item is dropped successfully
+Database starbucks is created successfully
+Database is changed successfully
 Table egift_item is created successfully
 table starbucks.egift_item
 (
@@ -60,4 +60,4 @@ table starbucks.egift_item
 
 Table egift_item is dropped successfully
 Database is changed successfully
-Database starbucks does not exist or drop error
+Database starbucks is dropped successfully
