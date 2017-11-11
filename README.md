@@ -1,4 +1,5 @@
 Updated by Andrew Zhang, 2015/08/28 
+(Draft)
 
 Jaguar database automation enables automated test cases with minimum manual operation. 
 After we successfully download and install a jaguar build, we can run this test
