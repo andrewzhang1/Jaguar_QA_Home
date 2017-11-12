@@ -94,11 +94,11 @@ echo -e "================================== "  2>&1 | tee -a  $logf
 
 # compare import_export.sql.out
 export FILE=import_export_csv
-compare_result.sh $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas
+compare_result $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas
 
 # Compapare  import_export-verification.out
 export FILE=import_export-verification_csv
-compare_result.sh $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas
+compare_result $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas
 
 
 echo "End of test import_export_sql.sh" 2>&1 | tee -a $logf

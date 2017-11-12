@@ -93,11 +93,11 @@ echo -e "\n\n2-5. Compare results "  2>&1 | tee -a $logf
 echo -e "================================ "  2>&1 | tee -a $logf
 # compare import_export.sql.out
 export FILE=import_export_sql
-compare_result.sh $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas  2>&1 | tee -a $logf 
+compare_result $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas  2>&1 | tee -a $logf 
 
 # Compapare  import_export-verification.out
 export FILE=import_export-verification_sql
-compare_result.sh $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas  2>&1 | tee -a $logf
+compare_result $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas  2>&1 | tee -a $logf
 
 
 echo "End of test import_export_sql.sh" 2>&1 | tee -a $logf

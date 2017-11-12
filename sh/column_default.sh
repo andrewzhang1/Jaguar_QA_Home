@@ -50,7 +50,7 @@ sleep 3
 echo -e "\n\n2. Compare results "  2>&1 | tee -a $logf
 echo -e "================================ "  2>&1 | tee -a $logf  
 
-compare_result.sh $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas 2>&1 | tee -a $logf
+compare_result $QA_HOME/work/${FILE}.out $QA_HOME/bas/${FILE}.bas 2>&1 | tee -a $logf
 
 echo "End of test: ${FILE}.sh! " 2>&1 | tee -a $logf 
 

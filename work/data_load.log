@@ -1,35 +1,35 @@
-Jaguar Server 2.8.2.3 140367980644096 / Client 2.8.2.3
+Jaguar Server 2.8.2.3 139987521582848 / Client 2.8.2.3
 
 jaguar:test> # SQL Name: data_load.sql
 
 jaguar:test> spool  $QA_HOME/work/data_load.out; 
-Done in 26 microseconds 
+Done in 23 microseconds 
 jaguar:test> 
 jaguar:test> create table data_load  ( key: uid char(32), value: v1 char(16), v2 char(16), v3 char(16) );
-Done in 2 milliseconds 
+Done in 3 milliseconds 
 jaguar:test> 
 jaguar:test> desc data_load;  
-Done in 90 microseconds 
+Done in 127 microseconds 
 jaguar:test> 
 jaguar:test> load $QA_HOME/data/10kLine.txt into data_load;
-Done in 480 milliseconds 
+Done in 482 milliseconds 
 jaguar:test> 
 jaguar:test> sleep 5;
 jaguar:test> 
 jaguar:test> select count(*) from  data_load;
-Done in 273 microseconds 
+Done in 248 microseconds 
 jaguar:test> select * from data_load  where v3 = "Apple31234567890";
-Done in 23 milliseconds (1 row) 
+Done in 22 milliseconds (1 row) 
 jaguar:test> select * from data_load  where v3 = 'Apple31234567890';
 Done in 22 milliseconds (1 row) 
 jaguar:test> 
 jaguar:test> show create table data_load;
-Done in 133 microseconds 
+Done in 107 microseconds 
 jaguar:test> drop table data_load;
 Done in 5 milliseconds 
 jaguar:test> 
 jaguar:test> spool off;
-Done in 35 microseconds 
+Done in 84 microseconds 
 jaguar:test> quit;
 
 Success comparing /home/andrew/t/azhang/Jaguar_QA_HOME/work/data_load.out
