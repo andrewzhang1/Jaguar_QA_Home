@@ -1,11 +1,12 @@
+!/bin/bash
 
 # added new test today
 
 # Andrew Zhang
 # Performance Test
-i#!/bin/bash
 
-#: Script name: jaguar_init.sh
+
+#: Script name: .sh
 #: Authors: Andrew Zhang
 #: Reviewers:
 #: Date: 10/02/2017
