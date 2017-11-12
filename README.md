@@ -1,5 +1,5 @@
 ## Instruction on Running automated test for jaguar database
-Updated by Andrew Zhang, 11/10/2017 (Draft)
+Updated by Andrew Zhang, 11/12/2017 (Draft)
 
 ##### Motivation: 
 Able to run anywhere on the one of the server that has jaguar server installed. 
