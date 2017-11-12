@@ -1,0 +1,15 @@
+Table function1 name was used already in current database or create error
+table test.function1
+(
+  key:
+    id_num char(32),
+  value:
+    random1 float(2,4),
+    random2 float(2,4),
+    random3 float(2,4),
+    random4 float(2,4),
+    random5 float(2,4),
+    spare_ char(15)
+);
+
+test.function1 contains 0 rows
