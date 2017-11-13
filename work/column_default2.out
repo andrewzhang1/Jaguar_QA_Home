@@ -1,0 +1,17 @@
+Table column_default2 is dropped successfully
+Table column_default2 is created successfully
+table test.column_default2
+(
+  key:
+    id uuid,
+  value:
+    a int DEFAULT '0',
+    b char(16) DEFAULT 'b',
+    bitv bit DEFAULT b'1',
+    bitm bit DEFAULT b'0',
+    tm1 timestamp DEFAULT CURRENT_TIMESTAMP,
+    tm2 timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    tm3 timestamp ON UPDATE CURRENT_TIMESTAMP,
+    spare_ char(36)
+);
+
