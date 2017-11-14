@@ -1,0 +1,17 @@
+Table suppliedname is dropped successfully
+Table suppliedname is created successfully
+table test.suppliedname
+(
+  key:
+    snid int,
+  value:
+    name char(50),
+    language char(30),
+    status char(20),
+    standard char(20),
+    placeid int,
+    supplierid int,
+    datesupplied date,
+    spare_ char(48)
+);
+

@@ -5,9 +5,10 @@
 # Currently this test will generate a coredump
 # Bug026_20171112 (failed at inserting data) 
 
-spool $QA_HOME/work/column_default2.out;
 
-drop table if exists column_default2; 
+drop table if exists column_default2;
+
+spool $QA_HOME/work/column_default2.out;
 
 create table column_default2
 (
@@ -26,7 +27,17 @@ create table column_default2
 desc test.column_default2;
 
 insert into test.column_default2 (id, a, b, bitv, bitm, tm1, tm2, tm3) values ('', '', '', '', '', '', '', '');
+insert into test.column_default2 (id, a, b, bitv, bitm, tm1, tm2, tm3) values ('', '', '', '', '', '', '', '');
+insert into test.column_default2 (id, a, b, bitv, bitm, tm1, tm2, tm3) values ('', '', '', '', '', '', '', '');
+insert into test.column_default2 (id, a, b, bitv, bitm, tm1, tm2, tm3) values ('', '', '', '', '', '', '', '');
+insert into test.column_default2 (id, a, b, bitv, bitm, tm1, tm2, tm3) values ('', '', '', '', '', '', '', '');
 
+insert into test.column_default2 (id, a, b, bitv, bitm, tm1, tm2, tm3) values ('1', '', '', '', '', '', '', '');
+insert into test.column_default2 (id, a, b, bitv, bitm, tm1, tm2, tm3) values ('2', '1', '1', '1', '1', '1', '1', '1');
+
+sleep 5;
+
+select count(*) from test.column_default2;
 select * from test.column_default2; 
 
 spool off;

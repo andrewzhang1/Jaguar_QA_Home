@@ -1,0 +1,16 @@
+Table place is dropped successfully
+Table place is created successfully
+table test.place
+(
+  key:
+    placeid int,
+  value:
+    latitude double(10,7),
+    longitude double(10,7),
+    elevation int,
+    population int,
+    type char(50),
+    country char(10),
+    spare_ char(35)
+);
+
