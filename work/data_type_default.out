@@ -29,8 +29,9 @@ table test.data_type_default
     v22_tinyblob char(256),
     v23_mediumblob char(2048),
     v24_longblob char(10240),
+    v25_string char(64),
     v26_varchar char(32),
     v27_bit bit,
-    spare_ char(8234)
+    spare_ char(8253)
 );
 

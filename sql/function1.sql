@@ -74,7 +74,19 @@ select trim(ID_Num)  from test.function1 limit 3;
 select length(random5)  from test.function1 limit 3;
 select length(ID_Num)  from test.function1 limit 3;
 
+# Test bug Bug030_20171121 (core dump when out of bound for "pow")
+drop table if exists function1_pow;
+create table function1_pow ( key: ID_Num char(32), Random1 double(30,28), Random2 double(30,28), Random3 double(30,28));
+desc function1_pow;
 
+Insert into test.function1_pow (id_num, random1, random2, random3) values (ID67, 2.0, 4, 16);
+sleep 3;
+
+select * from test.function1_pow;
+
+select pow(random1, random2)  from test.function1_pow;
+select pow(random1, random3)  from test.function1_pow;
+sleep 3;
 
 spool off;
 quit;

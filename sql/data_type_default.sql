@@ -37,6 +37,7 @@ create table data_type_default
         v22_TinyBlob TinyBlob,
         v23_MediumBlob MediumBlob,
         v24_LongBlob LongBlob,
+        v25_String string,
         v26_Varchar varchar(32),
         v27_Bit bit
 );
