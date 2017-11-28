@@ -9148,7 +9148,6 @@ insert into test.import_export ( uid, v1, v2, v3 ) values ( 'ugtSx3TNuppY3nLw', 
 insert into test.import_export ( uid, v1, v2, v3 ) values ( 'uh6NlJhnJgAvftEA', 'u3dAieczAVJvltVN', 'K0y4JPpt5XWkqASU', 'C3sSiErSy9mTAfGk' );
 insert into test.import_export ( uid, v1, v2, v3 ) values ( 'uh9BsZ43INzFrL1v', '6dbrdMfHCH5wFwia', 'NrJdoLe4yNHXxHsD', 'SC26ofN0XRwCnNK8' );
 insert into test.import_export ( uid, v1, v2, v3 ) values ( 'uiAOpN5ScnzNK8mw', '3DIIGGK5lGaAOpEj', 'Fe5208Vcvu0gBmKE', 'XqkD65GrJQZxdCOS' );
-insert into test.import_export ( uid, v1, v2, v3 ) values ( 'uid', 'v1', 'v2', 'v3' );
 insert into test.import_export ( uid, v1, v2, v3 ) values ( 'uind4hCpRDjtKfp8', 'IeFIcOpwyxrXgwPK', 'OcVQrxgj8xMTMaZt', 'oEbAqz4Y6wTn0J5O' );
 insert into test.import_export ( uid, v1, v2, v3 ) values ( 'uitOhQzAOV0k2Shn', 'FuYQWSW6Kyna5FyA', 'Y0odQVLEOLZOCebh', 'J75F02JIy7TDKrbG' );
 insert into test.import_export ( uid, v1, v2, v3 ) values ( 'ujjJEPVLlkFdYtih', 'dZSXqPnDo7HtaMbE', '5ulKkevDx9OvA6LN', '6BKwq58McPfmzrYF' );
