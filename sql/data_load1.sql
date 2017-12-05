@@ -1,8 +1,12 @@
 # SQL Name: data_load.sql
 
+dropdb jag_data_load;
 drop table if exists data_load;
 
 spool  $QA_HOME/work/data_load.out; 
+
+createdb jag_data_load;
+use jag_data_load;
 
 create table data_load  ( key: uid char(32), value: v1 char(16), v2 char(16), v3 char(16) );
 

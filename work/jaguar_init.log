@@ -5,13 +5,13 @@ Part 1: jaguarstop_on_all_hosts.sh
  
 ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstop
 ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstatus
-jaguar server is running on ssd
-jaguarstatus_on_all_hosts.sh  total hosts=1  jaguar on=1  jaguar off=0
-Mon Nov 27 16:32:53 PST 2017
-There are still 1 jaguar servers running, wait ...
 
 Shutdown of jaguar server on current host ssd ...
-Mon Nov 27 16:32:58 PST 2017
+jaguar server is running on ssd
+jaguarstatus_on_all_hosts.sh  total hosts=1  jaguar on=1  jaguar off=0
+Mon Dec  4 15:15:09 PST 2017
+There are still 1 jaguar servers running, wait ...
+Mon Dec  4 15:15:14 PST 2017
 
 ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstatus
 jaguar server is NOT running on ssd
@@ -26,16 +26,16 @@ Part 4: Run clean_all.sh
 #########################################################
  
 cleaning  now...
-total 136
+total 124
 drwxrwxr-x 2 andrew andrew   132 Nov 21 22:48 dir_core
--rw-r--r-- 1 andrew andrew 34798 Nov 27 16:32 jaguar.log
--rw-rw-r-- 1 andrew andrew 18794 Nov 27 11:08 jaguar.log.old
--rw-rw-r-- 1 andrew andrew 56910 Nov 27 10:59 jaguar.log.old.old
--rw------- 1 andrew andrew     7 Nov 27 11:08 jaguar.pid
--rw-rw-r-- 1 andrew andrew     0 Nov 27 16:19 load.err
--rw------- 1 andrew andrew 11857 Nov 27 16:23 perflog.txt
--rw-r--r-- 1 andrew andrew     4 Nov 27 16:32 shutdown.cmd
--rw------- 1 andrew andrew  1034 Nov 27 11:47 test.err
+-rw-r--r-- 1 andrew andrew 34342 Dec  4 15:15 jaguar.log
+-rw-rw-r-- 1 andrew andrew 21741 Dec  1 17:12 jaguar.log.old
+-rw-r--r-- 1 andrew andrew 39516 Dec  1 16:11 jaguar.log.old.old
+-rw------- 1 andrew andrew     7 Dec  1 17:13 jaguar.pid
+-rw-rw-r-- 1 andrew andrew     0 Dec  1 18:25 load.err
+-rw------- 1 andrew andrew 10660 Dec  4 15:13 perflog.txt
+-rw-r--r-- 1 andrew andrew     4 Dec  4 15:15 shutdown.cmd
+-rw------- 1 andrew andrew  1972 Dec  1 16:29 test.err
 donw with cleaning
 ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstart
 Jaguar database server is being started on all hosts ...

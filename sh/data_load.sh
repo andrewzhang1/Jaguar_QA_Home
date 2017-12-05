@@ -1,10 +1,35 @@
+#!/bin/bash
+
+#: Script Name: data_load.sh
+#: Authors: Andrew Zhang
+#: Reviewers:
+#: Date: 10/17/2017
+#: Purpose:     Basic funtion to load data in a new database.
+#: Test cases:
+#       Use case 1:
+#       -------------------------------------------------------------------
+#
+#: Component/Sub Comp:
+#: Owned by: Andrew Zhang
+#: Reviewed by:
+#: Tag:
+#: Dependencies: 
+#: Runnable: true
+#: Arguments: none
+#: Memory/Disk: 200MB/200MB
+#: SUC:  1
+#: Created for:
+#: Retired for:
+#: Test time: within 10 sec
+#: History:
+
+# 12/4/2017 Andrew Zhang
+#           Added test cases after the fix of bug 033 for version 2.8.3.1.1.1
 
 # Test Name: dataLoad.sh  
 # Test select:
-# Sample: "select * from jaguarFunc2;"
 
 
-# Note: Data load: by file or insert row by row.
 # Need two system environments:
 # JAGUAR_HOME and QA_HOME  
 
