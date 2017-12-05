@@ -1,9 +1,9 @@
-# SQL Name: data_load.sql
+# SQL Name: data_load1.sql
 
 dropdb jag_data_load;
 drop table if exists data_load;
 
-spool  $QA_HOME/work/data_load.out; 
+spool  $QA_HOME/work/data_load1.out; 
 
 createdb jag_data_load;
 use jag_data_load;
@@ -18,7 +18,7 @@ sleep 5;
 
 select count(*) from  data_load;
 select * from data_load  where v3 = "Apple31234567890";
-select * from data_load  where v3 = 'Apple31234567890';
+select * from jag_data_load.data_load  where v3 = 'Apple31234567890';
 
 show create table data_load;
 

@@ -33,14 +33,17 @@
 # Need two system environments:
 # JAGUAR_HOME and QA_HOME  
 
-# env settings
+
 FILE=data_load
+
+FILE=data_load
+FILE2=data_load2
+
 PORT=`cat $HOME/jaguar/conf/server.conf |grep PORT|grep -v oport|grep -v '#'|cut -d= -f2`
 HOST=127.0.0.1
 USER=admin
 PASSWORD=jaguar
 
-# $JAGUAR_TEST_HOME/sh/select1.sh
 
 function compare_result 
 {
@@ -65,8 +68,7 @@ if [ -f $logf ]
     then rm $logf
 fi
 
-$JAGUAR_HOME/bin/jag  -u $USER -p $PASSWORD  -h $HOST:$PORT -v yes < $QA_HOME/sql/${FILE}.sql 2>&1 | tee -a $logf
+$JAGUAR_HOME/bin/jag  -u $USER -p $PASSWORD  -h $HOST:$PORT -v yes < $QA_HOME/sql/${FILE}1.sql 2>&1 | tee -a $logf
 
-
-compare_result  $QA_HOME/work/${FILE}.out  $QA_HOME/bas/${FILE}.bas 2>&1 | tee -a $logf
+compare_result  $QA_HOME/work/${FILE}1.out  $QA_HOME/bas/${FILE1}1.bas 2>&1 | tee -a $logf
 
