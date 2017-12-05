@@ -12,7 +12,6 @@ fi
 
 
 diff $1 $2
-    # 2>&1 | tee -a  $JAGUAR_TEST_HOME/work/diff
     if [ $? -eq 0 ]
     then
         echo ""
@@ -21,7 +20,6 @@ diff $1 $2
     else
         echo ""
         echo Failure comparing $1
-        #diff $1 $2  >  /home/andrew/t/azhang/qa/work/diff
         diff $1 $2 > $QA_HOME/work/${FILE}.diff
     fi 
 

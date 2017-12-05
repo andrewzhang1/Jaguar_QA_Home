@@ -2,12 +2,12 @@ ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstop
 ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstatus
 jaguar server is running on ssd
 jaguarstatus_on_all_hosts.sh  total hosts=1  jaguar on=1  jaguar off=0
-Mon Nov 27 11:08:21 PST 2017
+Mon Dec  4 19:35:53 PST 2017
 There are still 1 jaguar servers running, wait ...
 
 Shutdown of jaguar server on current host ssd ...
 ssh 192.168.7.120 /home/andrew/jaguar/bin/jaguarstatus
-Mon Nov 27 11:08:26 PST 2017
+Mon Dec  4 19:35:58 PST 2017
 
 jaguar server is NOT running on ssd
 jaguarstatus_on_all_hosts.sh  total hosts=1  jaguar on=0  jaguar off=1
@@ -20,30 +20,30 @@ jaguar server is running on ssd
 1. Create table and load data
 ============================== 
 
-Jaguar Server 2.8.2.4 139740134561536 / Client 2.8.2.4
+Jaguar Server 2.8.3.1 140413020866304 / Client 2.8.3.1
 
 jaguar:test> jaguar:test> Table import_export is dropped successfully
-Done in 1611 microseconds 
-jaguar:test> Done in 433 microseconds 
+Done in 5 milliseconds 
+jaguar:test> Done in 87 microseconds 
 jaguar:test> jaguar:test> Done in 3 milliseconds 
-jaguar:test> jaguar:test> Done in 482 milliseconds 
-jaguar:test> jaguar:test> Done in 417 microseconds 
+jaguar:test> jaguar:test> Done in 493 milliseconds 
+jaguar:test> jaguar:test> Done in 143 microseconds 
 jaguar:test> 
 
 2-1. export by jagexportsql...
 
 ============================== 
 
-Mon Nov 27 11:08:51 PST 2017
+Mon Dec  4 19:36:23 PST 2017
 
-Jaguar Server 2.8.2.4 139740145067776 / Client 2.8.2.4
+Jaguar Server 2.8.3.1 140412809365248 / Client 2.8.3.1
 
 jaguar:test> spool /home/andrew/t/azhang/Jaguar_QA_Home/work/test.import_export.sql;
-Done in 23 microseconds 
+Done in 143 microseconds 
 jaguar:test> select * from test.import_export timeout 1000000 exportsql;
 Done in 47 milliseconds (10005 rows) 
 jaguar:test> spool off;
-Done in 386 microseconds 
+Done in 225 microseconds 
 jaguar:test> quit;
 Done
 Exported data is saved in file /home/andrew/t/azhang/Jaguar_QA_Home/work/test.import_export.sql
@@ -51,56 +51,4 @@ The exported file can be imported back to database with the command:
 
     ./jagimportsql /home/andrew/t/azhang/Jaguar_QA_Home/work/test.import_export.sql
 
-Mon Nov 27 11:08:52 PST 2017
-
-2-2. Clean data...
-============================== 
-
-Jaguar Server 2.8.2.4 139740034598656 / Client 2.8.2.4
-
-jaguar:test> jaguar:test> Done in 30 microseconds 
-jaguar:test> Done in 8 milliseconds 
-jaguar:test> jaguar:test> Done in 413 microseconds 
-jaguar:test> 
-
-2-3. Import by jagimportsql...
-============================== 
-
-Mon Nov 27 11:09:09 PST 2017
-/home/andrew/t/azhang/Jaguar_QA_Home/work/test.import_export.sql has 1420710 bytes 
-Jaguar Server 2.8.2.4 139740015687424 / Client 2.8.2.4
-
-Done
-Mon Nov 27 11:09:11 PST 2017
-
-2-4. Check Correctness...
-============================== 
-
-Jaguar Server 2.8.2.4 139740000978688 / Client 2.8.2.4
-
-jaguar:test> jaguar:test> Jaguar Server 2.8.2.4 139740000978688 / Client 2.8.2.4
-
-jaguar:test> jaguar:test> Done in 59 microseconds 
-jaguar:test> jaguar:test> Done in 59 microseconds 
-jaguar:test> jaguar:test> Done in 171 microseconds 
-jaguar:test> Done in 171 microseconds 
-jaguar:test> Done in 22 milliseconds (1 row) 
-jaguar:test> Done in 22 milliseconds (1 row) 
-jaguar:test> Done in 21 milliseconds (1 row) 
-jaguar:test> jaguar:test> Done in 13 microseconds 
-jaguar:test> Done in 21 milliseconds (1 row) 
-jaguar:test> jaguar:test> Done in 13 microseconds 
-jaguar:test> ssh 192.168.7.120 grep selectcount /home/andrew/jaguar/log/jaguar.log
-selectcount type=0 import_export keychecker=10005 diskarray=10005
-selectcount type=0 import_export keychecker=10005 diskarray=10005
-================================================================
-
-
-2-5. Compare results 
-================================ 
-
-Success comparing /home/andrew/t/azhang/Jaguar_QA_Home/work/import_export_sql.out
-Binary files /home/andrew/t/azhang/Jaguar_QA_Home/work/import_export-verification_sql.out and /home/andrew/t/azhang/Jaguar_QA_Home/bas/import_export-verification_sql.bas differ
-
-Failure comparing /home/andrew/t/azhang/Jaguar_QA_Home/work/import_export-verification_sql.out
-End of test import_export_sql.sh
+Mon Dec  4 19:36:25 PST 2017

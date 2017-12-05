@@ -1,6 +1,8 @@
 # SQL Name: data_load1.sql
 
-dropdb jag_data_load;
+#Commented the following due to Bug034
+#dropdb jag_data_load;
+
 drop table if exists data_load;
 
 spool  $QA_HOME/work/data_load1.out; 
@@ -22,7 +24,11 @@ select * from jag_data_load.data_load  where v3 = 'Apple31234567890';
 
 show create table data_load;
 
+use test;
+sleep 2;
+
 spool off;
+
 quit;
 
 

@@ -2,44 +2,44 @@
 1. Create table and load data
 ============================== 
 
-Jaguar Server 2.8.3 139911520261888 / Client 2.8.3
+Jaguar Server 2.8.3.1 140470212527872 / Client 2.8.3.1
 
-jaguar:test> jaguar:test> jaguar:test> Jaguar Server 2.8.3 139911520261888 / Client 2.8.3
+jaguar:test> jaguar:test> jaguar:test> Jaguar Server 2.8.3.1 140470212527872 / Client 2.8.3.1
 
-jaguar:test> jaguar:test> jaguar:test> Done in 33 microseconds 
-jaguar:test> jaguar:test> Done in 33 microseconds 
+jaguar:test> jaguar:test> jaguar:test> Done in 35 microseconds 
+jaguar:test> jaguar:test> Done in 35 microseconds 
 jaguar:test> jaguar:test> Done in 2 milliseconds 
 jaguar:test> jaguar:test> Done in 2 milliseconds 
-jaguar:test> jaguar:test> Done in 43 milliseconds 
-jaguar:test> jaguar:test> Done in 43 milliseconds 
+jaguar:test> jaguar:test> Done in 2 milliseconds 
+jaguar:test> jaguar:test> Done in 2 milliseconds 
 jaguar:test> jaguar:test> error: Invalid command [dssc column_default;]. Please check its syntax. 0 [20]
-jaguar:test> Done in 5 microseconds 
-jaguar:test> Done in 4 microseconds 
-jaguar:test> Done in 3 microseconds 
 jaguar:test> error: Invalid command [dssc column_default;]. Please check its syntax. 0 [20]
+jaguar:test> Done in 7 microseconds 
+jaguar:test> Done in 7 microseconds 
+jaguar:test> Done in 6 microseconds 
+jaguar:test> Done in 6 microseconds 
 jaguar:test> Done in 5 microseconds 
-jaguar:test> Done in 4 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 4 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 4 microseconds 
-jaguar:test> Done in 4 microseconds 
-jaguar:test> Done in 4 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> Done in 3 microseconds 
-jaguar:test> jaguar:test> Done in 3 microseconds 
-jaguar:test> jaguar:test> jaguar:test> jaguar:test> jaguar:test> jaguar:test> Done in 17 milliseconds (11 rows) 
-jaguar:test> jaguar:test> Done in 17 milliseconds (11 rows) 
-jaguar:test> jaguar:test> Done in 60 microseconds 
-jaguar:test> Done in 60 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> Done in 6 microseconds 
+jaguar:test> Done in 6 microseconds 
+jaguar:test> Done in 6 microseconds 
+jaguar:test> Done in 6 microseconds 
+jaguar:test> Done in 6 microseconds 
+jaguar:test> Done in 6 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> Done in 5 microseconds 
+jaguar:test> jaguar:test> Done in 5 microseconds 
+jaguar:test> jaguar:test> jaguar:test> jaguar:test> jaguar:test> jaguar:test> Done in 16 milliseconds (11 rows) 
+jaguar:test> jaguar:test> Done in 13 microseconds 
+jaguar:test> Done in 16 milliseconds (11 rows) 
+jaguar:test> jaguar:test> Done in 13 microseconds 
 jaguar:test> 
 
 2. Compare results 
